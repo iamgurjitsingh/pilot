@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "af5ab22c-2b88-4941-8b93-690e0dea223e",
+		"name": "Pilot Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetch all list of registrations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ionos.pilot.local:8000/api/registrations",
+					"protocol": "http",
+					"host": [
+						"ionos",
+						"pilot",
+						"local"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registrations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ionos.pilot.local:8000/api/store?country_code=DE&name=Gurjit Singh&street=Emdener Strassa&street_no=45&zip_code=10551&city=Berlin&company=IONOS",
+					"protocol": "http",
+					"host": [
+						"ionos",
+						"pilot",
+						"local"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"store"
+					],
+					"query": [
+						{
+							"key": "country_code",
+							"value": "DE"
+						},
+						{
+							"key": "name",
+							"value": "Gurjit Singh"
+						},
+						{
+							"key": "street",
+							"value": "Emdener Strassa"
+						},
+						{
+							"key": "street_no",
+							"value": "45"
+						},
+						{
+							"key": "zip_code",
+							"value": "10551"
+						},
+						{
+							"key": "city",
+							"value": "Berlin"
+						},
+						{
+							"key": "company",
+							"value": "IONOS"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get registrartion by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ionos.pilot.local:8000/api/registration/3",
+					"protocol": "http",
+					"host": [
+						"ionos",
+						"pilot",
+						"local"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registration",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update resgistration by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://ionos.pilot.local:8000/api/registration/3?country_code=DE&name=Gurjit Singh&street=Emdener Strassa&street_no=45&zip_code=10551&city=Berlin&company=IONOS",
+					"protocol": "http",
+					"host": [
+						"ionos",
+						"pilot",
+						"local"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registration",
+						"3"
+					],
+					"query": [
+						{
+							"key": "country_code",
+							"value": "DE"
+						},
+						{
+							"key": "name",
+							"value": "Gurjit Singh"
+						},
+						{
+							"key": "street",
+							"value": "Emdener Strassa"
+						},
+						{
+							"key": "street_no",
+							"value": "45"
+						},
+						{
+							"key": "zip_code",
+							"value": "10551"
+						},
+						{
+							"key": "city",
+							"value": "Berlin"
+						},
+						{
+							"key": "company",
+							"value": "IONOS"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete registration by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://ionos.pilot.local:8000/api/registration/4",
+					"protocol": "http",
+					"host": [
+						"ionos",
+						"pilot",
+						"local"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registration",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resgister User Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ionos.pilot.local:8000/api/register?name=Gurjit Singh&email=demo@gmail.com&password=123456",
+					"protocol": "http",
+					"host": [
+						"ionos",
+						"pilot",
+						"local"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Gurjit Singh"
+						},
+						{
+							"key": "email",
+							"value": "demo@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://ionos.pilot.local:8000/api/login?email=gurjit035@gmail.com&password=123456",
+					"protocol": "http",
+					"host": [
+						"ionos",
+						"pilot",
+						"local"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "gurjit035@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
