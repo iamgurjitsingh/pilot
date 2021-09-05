@@ -30,6 +30,7 @@ DB_PORT=3306
 DB_DATABASE=homestead
 DB_USERNAME=homestead
 DB_PASSWORD=secret
+
 AWS_ACCESS_KEY_ID=access_key
 AWS_SECRET_ACCESS_KEY=secret_key
 AWS_DEFAULT_REGION=default_region
@@ -52,7 +53,7 @@ Run Application:
 ```bash
 $ php -S localhost:8000 -t public/
 ```
-You can create a virtualhost as well.
+You can create a virtualhost as well. http://ionos.pilot.local:8000
 
 ## API Routes
 | HTTP Method	| Path | Action |  Desciption  |
@@ -77,6 +78,7 @@ $ crontab -e
 $ * * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
 
 4) You can adjust timing for CSV export in app/Console/Commands/Kernel.php
+
 $schedule->command('export:register')->cron('0 */3 * * *');
 ```
 
